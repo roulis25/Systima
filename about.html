@@ -1,206 +1,335 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ποιοι Είμαστε - 4ο Σύστημα Προσκόπων Νέας Σμύρνης</title>
-    <meta name="description" content="Μάθετε ποιοι είμαστε, τις ομάδες μας και πώς μπορείτε να συμμετάσχετε στο 4ο Σύστημα Προσκόπων Νέας Σμύρνης.">
-    <meta property="og:title" content="Ποιοι Είμαστε - 4ο Σύστημα Προσκόπων Νέας Σμύρνης">
-    <meta property="og:description" content="Μάθετε ποιοι είμαστε, τις ομάδες μας και πώς μπορείτε να συμμετάσχετε στο 4ο Σύστημα Προσκόπων Νέας Σμύρνης.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/logo.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+    <meta
+      name="description"
+      content="Μάθετε ποιοι είμαστε, τις ομάδες μας και πώς μπορείτε να συμμετάσχετε στο 4ο Σύστημα Προσκόπων Νέας Σμύρνης."
+    />
+    <meta
+      property="og:title"
+      content="Ποιοι Είμαστε - 4ο Σύστημα Προσκόπων Νέας Σμύρνης"
+    />
+    <meta
+      property="og:description"
+      content="Μάθετε ποιοι είμαστε, τις ομάδες μας και πώς μπορείτε να συμμετάσχετε στο 4ο Σύστημα Προσκόπων Νέας Σμύρνης."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<body class="about-page">
+  <body class="about-page">
     <header>
-        <h1>
-            <img src="images/logo.png" alt="Λογότυπο Προσκόπων" class="logo">
-            4ο Σύστημα Προσκόπων Νέας Σμύρνης
-        </h1>
-        <nav class="navbar">
-            <button type="button" class="burger" data-menu-toggle onclick="toggleMenu()" aria-expanded="false"
-                aria-controls="navLinks" aria-label="Άνοιγμα μενού πλοήγησης">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Αρχική</a></li>
-                <li><a href="about.html" aria-current="page">Ποιοι Είμαστε</a></li>
-                <li><a href="contact.html">Επικοινωνία</a></li>
-            </ul>
-        </nav>
+      <h1>
+        <img src="images/logo.png" alt="Λογότυπο Προσκόπων" class="logo" />
+        4ο Σύστημα Προσκόπων Νέας Σμύρνης
+      </h1>
+      <nav class="navbar">
+        <button
+          type="button"
+          class="burger"
+          data-menu-toggle
+          onclick="toggleMenu()"
+          aria-expanded="false"
+          aria-controls="navLinks"
+          aria-label="Άνοιγμα μενού πλοήγησης"
+        >
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="about.html" aria-current="page">Ποιοι Είμαστε</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="content about-shell">
-        <section class="about-hero">
-            <div class="about-hero-copy">
-                <p class="about-kicker">Scout spirit in Nea Smyrni</p>
-                <h2>&#x3A0;&#x3BF;&#x3B9;&#x3BF;&#x3B9; &#x395;&#x3AF;&#x3BC;&#x3B1;&#x3C3;&#x3C4;&#x3B5;</h2>
-                <p class="about-lead">
-                    &#x391;&#x3C0;&#x3CC; &#x3C4;&#x3BF; 1960 &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3BF;&#x3CD;&#x3BC;&#x3B5; &#x3B5;&#x3BC;&#x3C0;&#x3B5;&#x3B9;&#x3C1;&#x3AF;&#x3B5;&#x3C2;, &#x3C6;&#x3B9;&#x3BB;&#x3AF;&#x3B5;&#x3C2; &#x3BA;&#x3B1;&#x3B9; &#x3B4;&#x3C1;&#x3AC;&#x3C3;&#x3B5;&#x3B9;&#x3C2; &#x3C0;&#x3BF;&#x3C5; &#x3B2;&#x3BF;&#x3B7;&#x3B8;&#x3BF;&#x3CD;&#x3BD; &#x3C4;&#x3B1; &#x3C0;&#x3B1;&#x3B9;&#x3B4;&#x3B9;&#x3AC; &#x3BA;&#x3B1;&#x3B9; &#x3C4;&#x3BF;&#x3C5;&#x3C2; &#x3B5;&#x3C6;&#x3AE;&#x3B2;&#x3BF;&#x3C5;&#x3C2; &#x3BD;&#x3B1; &#x3BC;&#x3B5;&#x3B3;&#x3B1;&#x3BB;&#x3CE;&#x3BD;&#x3BF;&#x3C5;&#x3BD; &#x3BC;&#x3B5; &#x3B1;&#x3BE;&#x3AF;&#x3B5;&#x3C2;.
-                </p>
-                <div class="about-hero-actions">
-                    <a href="#lykopoyla" class="about-primary-link">&#x391;&#x3B3;&#x3AD;&#x3BB;&#x3B7;</a>
-                    <a href="#omada" class="about-secondary-link">&#x39F;&#x3BC;&#x3AC;&#x3B4;&#x3B1;</a>
-                    <a href="#koinotita" class="about-secondary-link">&#x391;&#x3BD;&#x3B9;&#x3C7;&#x3BD;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C2;</a>
-                </div>
+      <section class="about-hero">
+        <div class="about-hero-copy">
+          <p class="about-kicker">Scout spirit in Nea Smyrni</p>
+          <h2>
+            &#x3A0;&#x3BF;&#x3B9;&#x3BF;&#x3B9;
+            &#x395;&#x3AF;&#x3BC;&#x3B1;&#x3C3;&#x3C4;&#x3B5;
+          </h2>
+          <p class="about-lead">
+            &#x391;&#x3C0;&#x3CC; &#x3C4;&#x3BF; 1960
+            &#x3B4;&#x3B7;&#x3BC;&#x3B9;&#x3BF;&#x3C5;&#x3C1;&#x3B3;&#x3BF;&#x3CD;&#x3BC;&#x3B5;
+            &#x3B5;&#x3BC;&#x3C0;&#x3B5;&#x3B9;&#x3C1;&#x3AF;&#x3B5;&#x3C2;,
+            &#x3C6;&#x3B9;&#x3BB;&#x3AF;&#x3B5;&#x3C2; &#x3BA;&#x3B1;&#x3B9;
+            &#x3B4;&#x3C1;&#x3AC;&#x3C3;&#x3B5;&#x3B9;&#x3C2;
+            &#x3C0;&#x3BF;&#x3C5;
+            &#x3B2;&#x3BF;&#x3B7;&#x3B8;&#x3BF;&#x3CD;&#x3BD; &#x3C4;&#x3B1;
+            &#x3C0;&#x3B1;&#x3B9;&#x3B4;&#x3B9;&#x3AC; &#x3BA;&#x3B1;&#x3B9;
+            &#x3C4;&#x3BF;&#x3C5;&#x3C2;
+            &#x3B5;&#x3C6;&#x3AE;&#x3B2;&#x3BF;&#x3C5;&#x3C2; &#x3BD;&#x3B1;
+            &#x3BC;&#x3B5;&#x3B3;&#x3B1;&#x3BB;&#x3CE;&#x3BD;&#x3BF;&#x3C5;&#x3BD;
+            &#x3BC;&#x3B5; &#x3B1;&#x3BE;&#x3AF;&#x3B5;&#x3C2;.
+          </p>
+          <div class="about-hero-actions">
+            <a href="#lykopoyla" class="about-primary-link"
+              >&#x391;&#x3B3;&#x3AD;&#x3BB;&#x3B7;</a
+            >
+            <a href="#omada" class="about-secondary-link"
+              >&#x39F;&#x3BC;&#x3AC;&#x3B4;&#x3B1;</a
+            >
+            <a href="#koinotita" class="about-secondary-link"
+              >&#x391;&#x3BD;&#x3B9;&#x3C7;&#x3BD;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C2;</a
+            >
+          </div>
+        </div>
+        <figure class="about-hero-media">
+          <img
+            src="images/systhma.jpg"
+            alt="&#x3A4;&#x3BF; &#x3C3;&#x3CD;&#x3C3;&#x3C4;&#x3B7;&#x3BC;&#x3AC; &#x3BC;&#x3B1;&#x3C2;."
+            class="unit-image"
+          />
+          <figcaption class="image-credit">
+            &#x3A6;&#x3C9;&#x3C4;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3AF;&#x3B1;:
+            4&#x3BF; &#x3A3;&#x3CD;&#x3C3;&#x3C4;&#x3B7;&#x3BC;&#x3B1;
+            &#x3A0;&#x3C1;&#x3BF;&#x3C3;&#x3BA;&#x3CC;&#x3C0;&#x3C9;&#x3BD;
+            &#x39D;&#x3AD;&#x3B1;&#x3C2;
+            &#x3A3;&#x3BC;&#x3CD;&#x3C1;&#x3BD;&#x3B7;&#x3C2; (&#x3BC;&#x3B5;
+            &#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B1;
+            &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3B7;&#x3C2;)
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="about-highlights" aria-label="About highlights">
+        <article class="about-highlight-card">
+          <strong id="yearsOfExistence"></strong>
+          <span>χρόνια προσκοπτικής παρουσίας στη Νέα Σμύρνη</span>
+        </article>
+        <article class="about-highlight-card">
+          <strong>3</strong>
+          <span
+            >&#x3B7;&#x3BB;&#x3B9;&#x3BA;&#x3B9;&#x3B1;&#x3BA;&#x3AD;&#x3C2;
+            &#x3B5;&#x3BD;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B5;&#x3C2;
+            &#x3BC;&#x3B5;
+            &#x3BE;&#x3B5;&#x3C7;&#x3C9;&#x3C1;&#x3B9;&#x3C3;&#x3C4;&#x3AE;
+            &#x3C4;&#x3B1;&#x3C5;&#x3C4;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B1;</span
+          >
+        </article>
+        <article class="about-highlight-card">
+          <strong>&#x3A3;&#x3B1;&#x3B2;/&#x39A;&#x3C5;&#x3C1;</strong>
+          <span
+            >&#x3C3;&#x3C5;&#x3C3;&#x3C4;&#x3B7;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C2;
+            &#x3C3;&#x3C5;&#x3B3;&#x3BA;&#x3B5;&#x3BD;&#x3C4;&#x3C1;&#x3CE;&#x3C3;&#x3B5;&#x3B9;&#x3C2;
+            &#x3BA;&#x3B1;&#x3B9;
+            &#x3B5;&#x3BE;&#x3BF;&#x3C1;&#x3BC;&#x3AE;&#x3C3;&#x3B5;&#x3B9;&#x3C2;</span
+          >
+        </article>
+      </section>
+      <h2>Ποιοι Είμαστε</h2>
+      <p>
+        Το 4ο Σύστημα Προσκόπων Νέας Σμύρνης ιδρύθηκε το 1960 με σκοπό να
+        προσφέρει στους νέους εμπειρίες, δεξιότητες και αξίες που θα τους
+        συνοδεύουν για μια ζωή. Μέσα από παιχνίδι, δράσεις στη φύση και
+        εθελοντισμό, τα παιδιά και οι έφηβοι ανακαλύπτουν τον εαυτό τους και τον
+        κόσμο γύρω τους.
+      </p>
+      <p>
+        Η ομάδα μας αποτελείται από έμπειρα Ενήλικα Στελέχη και ενήλικες
+        εθελοντές που με μεράκι καθοδηγούν τα παιδιά σε κάθε τους βήμα. Είμαστε
+        μέρος του Σώματος Ελλήνων Προσκόπων και ακολουθούμε τις αξίες του
+        προσκοπισμού με υπευθυνότητα και αφοσίωση.
+      </p>
+      <img src="images/systhma.jpg" alt="Το Σύστημά μας." class="unit-image" />
+      <p class="image-credit">
+        Φωτογραφία: 4ο Σύστημα Προσκόπων Νέας Σμύρνης (με άδεια χρήσης)
+      </p>
+
+      <nav class="about-jump-links" aria-label="About sections">
+        <a href="#lykopoyla"
+          >&#x39B;&#x3C5;&#x3BA;&#x3CC;&#x3C0;&#x3BF;&#x3C5;&#x3BB;&#x3B1;</a
+        >
+        <a href="#omada"
+          >&#x3A0;&#x3C1;&#x3CC;&#x3C3;&#x3BA;&#x3BF;&#x3C0;&#x3BF;&#x3B9;</a
+        >
+        <a href="#koinotita"
+          >&#x391;&#x3BD;&#x3B9;&#x3C7;&#x3BD;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C2;</a
+        >
+      </nav>
+
+      <section id="lykopoyla" class="unit-block lykopoula">
+        <div class="overlay">
+          <h3 class="agelh">Η αγέλη μας!</h3>
+          <p>
+            Η αγέλη μας αποτελείται από 20 παιδιά και 4 Ενήλικα Στελέχη που με
+            τις εκπαιδεύσεις και την αγάπη τους, φροντίζουν για την ασφάλεια, το
+            παιχνίδι και ολόκληρη τη Λυκοπουλική εμπειρία που λαμβάνουν τα
+            Λυκόπουλα κάθε χρονιά!
+          </p>
+          <div class="icon-text-block">
+            <div class="image-caption-wrapper">
+              <img
+                src="images/agelh_poioi.png"
+                alt="Λυκόπουλα"
+                class="unit-icon"
+              />
+              <p class="caption">
+                Φωτογραφία: 4η Αγέλη Νέας Σμύρνης (με άδεια χρήσης)
+              </p>
             </div>
-            <figure class="about-hero-media">
-                <img src="images/systhma.jpg" alt="&#x3A4;&#x3BF; &#x3C3;&#x3CD;&#x3C3;&#x3C4;&#x3B7;&#x3BC;&#x3AC; &#x3BC;&#x3B1;&#x3C2;." class="unit-image">
-                <figcaption class="image-credit">&#x3A6;&#x3C9;&#x3C4;&#x3BF;&#x3B3;&#x3C1;&#x3B1;&#x3C6;&#x3AF;&#x3B1;: 4&#x3BF; &#x3A3;&#x3CD;&#x3C3;&#x3C4;&#x3B7;&#x3BC;&#x3B1; &#x3A0;&#x3C1;&#x3BF;&#x3C3;&#x3BA;&#x3CC;&#x3C0;&#x3C9;&#x3BD; &#x39D;&#x3AD;&#x3B1;&#x3C2; &#x3A3;&#x3BC;&#x3CD;&#x3C1;&#x3BD;&#x3B7;&#x3C2; (&#x3BC;&#x3B5; &#x3AC;&#x3B4;&#x3B5;&#x3B9;&#x3B1; &#x3C7;&#x3C1;&#x3AE;&#x3C3;&#x3B7;&#x3C2;)</figcaption>
-            </figure>
-        </section>
-
-        <section class="about-highlights" aria-label="About highlights">
-            <article class="about-highlight-card">
-                <strong>1960</strong>
-                <span>&#x3C7;&#x3C1;&#x3CC;&#x3BD;&#x3B9;&#x3B1; &#x3C0;&#x3C1;&#x3BF;&#x3C3;&#x3BA;&#x3BF;&#x3C0;&#x3B9;&#x3BA;&#x3AE;&#x3C2; &#x3C0;&#x3B1;&#x3C1;&#x3BF;&#x3C5;&#x3C3;&#x3AF;&#x3B1;&#x3C2; &#x3C3;&#x3C4;&#x3B7; &#x39D;&#x3AD;&#x3B1; &#x3A3;&#x3BC;&#x3CD;&#x3C1;&#x3BD;&#x3B7;</span>
-            </article>
-            <article class="about-highlight-card">
-                <strong>3</strong>
-                <span>&#x3B7;&#x3BB;&#x3B9;&#x3BA;&#x3B9;&#x3B1;&#x3BA;&#x3AD;&#x3C2; &#x3B5;&#x3BD;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B5;&#x3C2; &#x3BC;&#x3B5; &#x3BE;&#x3B5;&#x3C7;&#x3C9;&#x3C1;&#x3B9;&#x3C3;&#x3C4;&#x3AE; &#x3C4;&#x3B1;&#x3C5;&#x3C4;&#x3CC;&#x3C4;&#x3B7;&#x3C4;&#x3B1;</span>
-            </article>
-            <article class="about-highlight-card">
-                <strong>&#x3A3;&#x3B1;&#x3B2;/&#x39A;&#x3C5;&#x3C1;</strong>
-                <span>&#x3C3;&#x3C5;&#x3C3;&#x3C4;&#x3B7;&#x3BC;&#x3B1;&#x3C4;&#x3B9;&#x3BA;&#x3AD;&#x3C2; &#x3C3;&#x3C5;&#x3B3;&#x3BA;&#x3B5;&#x3BD;&#x3C4;&#x3C1;&#x3CE;&#x3C3;&#x3B5;&#x3B9;&#x3C2; &#x3BA;&#x3B1;&#x3B9; &#x3B5;&#x3BE;&#x3BF;&#x3C1;&#x3BC;&#x3AE;&#x3C3;&#x3B5;&#x3B9;&#x3C2;</span>
-            </article>
-        </section>
-        <h2>Ποιοι Είμαστε</h2>
-        <p>
-            Το 4ο Σύστημα Προσκόπων Νέας Σμύρνης ιδρύθηκε το 1960 με σκοπό να προσφέρει στους νέους εμπειρίες,
-            δεξιότητες και αξίες που θα τους συνοδεύουν για μια ζωή. Μέσα από παιχνίδι, δράσεις στη φύση και εθελοντισμό, τα παιδιά και
-            οι έφηβοι ανακαλύπτουν τον εαυτό τους και τον κόσμο γύρω τους.
-        </p>
-        <p>
-            Η ομάδα μας αποτελείται από έμπειρα Ενήλικα Στελέχη και ενήλικες εθελοντές που με μεράκι καθοδηγούν τα παιδιά
-            σε κάθε τους βήμα. Είμαστε μέρος του Σώματος Ελλήνων Προσκόπων και ακολουθούμε τις αξίες του προσκοπισμού με
-            υπευθυνότητα και αφοσίωση.
-        </p>
-        <img src="images/systhma.jpg" alt="Το Σύστημά μας." class="unit-image">
-        <p class="image-credit">Φωτογραφία: 4ο Σύστημα Προσκόπων Νέας Σμύρνης (με άδεια χρήσης)</p>
-
-        <nav class="about-jump-links" aria-label="About sections">
-            <a href="#lykopoyla">&#x39B;&#x3C5;&#x3BA;&#x3CC;&#x3C0;&#x3BF;&#x3C5;&#x3BB;&#x3B1;</a>
-            <a href="#omada">&#x3A0;&#x3C1;&#x3CC;&#x3C3;&#x3BA;&#x3BF;&#x3C0;&#x3BF;&#x3B9;</a>
-            <a href="#koinotita">&#x391;&#x3BD;&#x3B9;&#x3C7;&#x3BD;&#x3B5;&#x3C5;&#x3C4;&#x3AD;&#x3C2;</a>
-        </nav>
-
-        <section id="lykopoyla" class="unit-block lykopoula">
-            <div class="overlay">
-                <h3 class="agelh">Η αγέλη μας!</h3>
-                <p>Η αγέλη μας αποτελείται από 20 παιδιά και 4 Ενήλικα Στελέχη που με τις εκπαιδεύσεις και την αγάπη
-                   τους, φροντίζουν για την ασφάλεια, το παιχνίδι και ολόκληρη τη Λυκοπουλική εμπειρία που λαμβάνουν
-                   τα Λυκόπουλα κάθε χρονιά!
-                </p>
-                <div class="icon-text-block">
-                    <div class="image-caption-wrapper">
-                        <img src="images/agelh_poioi.png" alt="Λυκόπουλα" class="unit-icon">
-                        <p class="caption">Φωτογραφία: 4η Αγέλη Νέας Σμύρνης (με άδεια χρήσης)</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Η αγέλη μας είναι χωρισμένη σε 3 εξάδες, οι οποίες είναι οι εξής:</p>
-                        <ul>
-                            <li class="brown">Καφετιοί</li>
-                            <li class="red">Κοκκινοποί</li>
-                            <li>Πιτσιλοτοί</li>
-                        </ul>
-                        <p>Οι τυπικές συγκεντρώσεις μας πραγματοποιούνται στη Λέσχη μας κάθε Σάββατο πρωί και ώρες 11:00
-                            - 13:00 από το πρώτο Σαββατοκύριακο του Οκτώβρη μέχρι το τελευταίο Σαββατοκύριακο του Μάη
-                            ενώ κάθε καλοκαίρι - συνήθως το τελευταίο 15μερο του Ιούλη - πραγματοποιείται η θερινή μας
-                            κατασκήνωση!!!
-                        </p>
-                    </div>
-                </div>
-                <p>
-                    Εκτός από τις τυπικές μας συγκεντρώσεις, σε μια προσκοπική χρονιά πραγματοποιούμε δύο 2ήμερες
-                    εκδρομές, 2 4ήμερες και πολλές μονοήμερες εκδρομές και επισκέψεις!
-                </p>
+            <div class="text-block">
+              <p>
+                Η αγέλη μας είναι χωρισμένη σε 3 εξάδες, οι οποίες είναι οι
+                εξής:
+              </p>
+              <ul>
+                <li class="brown">Καφετιοί</li>
+                <li class="red">Κοκκινοποί</li>
+                <li>Πιτσιλοτοί</li>
+              </ul>
+              <p>
+                Οι τυπικές συγκεντρώσεις μας πραγματοποιούνται στη Λέσχη μας
+                κάθε Σάββατο πρωί και ώρες 11:00 - 13:00 από το πρώτο
+                Σαββατοκύριακο του Οκτώβρη μέχρι το τελευταίο Σαββατοκύριακο του
+                Μάη ενώ κάθε καλοκαίρι - συνήθως το τελευταίο 15μερο του Ιούλη -
+                πραγματοποιείται η θερινή μας κατασκήνωση!!!
+              </p>
             </div>
-        </section>
+          </div>
+          <p>
+            Εκτός από τις τυπικές μας συγκεντρώσεις, σε μια προσκοπική χρονιά
+            πραγματοποιούμε δύο 2ήμερες εκδρομές, 2 4ήμερες και πολλές
+            μονοήμερες εκδρομές και επισκέψεις!
+          </p>
+        </div>
+      </section>
 
-        <section id="omada" class="unit-block proskopoi">
-            <div class="overlay">
-                <h3 class="proskopoi">Η ομάδα μας!</h3>
-                <p>Η ομάδα μας αποτελείται από 20 παιδιά και 5 Ενήλικα Στελέχη που με τις εκπαιδεύσεις και την αγάπη
-                   τους, φροντίζουν για την ασφάλεια, το παιχνίδι και ολόκληρη την Προσκοπική εμπειρία που λαμβάνουν
-                   οι Πρόσκοποι κάθε χρονιά! Η Ομάδα μας επίσης συνεργάζεται με την Ομάδα του 5ου Συστήματος
-                   Προσκόπων Νέας Σμύρνης και συμμετέχει σε κοινές δράσεις και εκδρομές. Η συνεργαζόμενη ομάδα αριθμεί 8 παιδιά και 3
-                   Ενήλικα Στελέχη.
-                </p>
-                <div class="icon-text-block">
-                    <div class="image-caption-wrapper">
-                        <img src="images/omada.JPG" alt="Ομάδα" class="unit-icon">
-                        <p class="caption">Φωτογραφία: 4η & 5η Ομάδα Νέας Σμύρνης (με άδεια χρήσης)</p>
-                    </div>
-                    <div class="text-block">
-                        <p>Η ομάδα μας είναι χωρισμένη σε 3 ενωμοτίες, οι οποίες είναι οι εξής:</p>
-                        <ul>
-                            <li>Ελάφια</li>
-                            <li>Γεράκια</li>
-                            <li>Σκίουροι</li>
-                        </ul>
-                        <p>Οι τυπικές συγκεντρώσεις μας πραγματοποιούνται στη Λέσχη μας κάθε Κυριακή μεσημεροαπόγευμα
-                            και ώρες 16:00 - 18:00 από την έναρξη των σχολείων μέχρι το τελευταίο Σαββατοκύριακο του Μάη
-                            ενώ κάθε καλοκαίρι - συνήθως το πρώτο 15μερο του Ιούλη - πραγματοποιείται η θερινή μας
-                            κατασκήνωση!!!
-                        </p>
-                    </div>
-                </div>
-                <p>
-                    Εκτός από τις τυπικές μας συγκεντρώσεις, σε μια προσκοπική χρονιά πραγματοποιούμε δύο 2ήμερες
-                    εκδρομές, 2 4ήμερες και πολλές μονοήμερες εκδρομές και επισκέψεις!
-                </p>
+      <section id="omada" class="unit-block proskopoi">
+        <div class="overlay">
+          <h3 class="proskopoi">Η ομάδα μας!</h3>
+          <p>
+            Η ομάδα μας αποτελείται από 20 παιδιά και 5 Ενήλικα Στελέχη που με
+            τις εκπαιδεύσεις και την αγάπη τους, φροντίζουν για την ασφάλεια, το
+            παιχνίδι και ολόκληρη την Προσκοπική εμπειρία που λαμβάνουν οι
+            Πρόσκοποι κάθε χρονιά! Η Ομάδα μας επίσης συνεργάζεται με την Ομάδα
+            του 5ου Συστήματος Προσκόπων Νέας Σμύρνης και συμμετέχει σε κοινές
+            δράσεις και εκδρομές. Η συνεργαζόμενη ομάδα αριθμεί 8 παιδιά και 3
+            Ενήλικα Στελέχη.
+          </p>
+          <div class="icon-text-block">
+            <div class="image-caption-wrapper">
+              <img src="images/omada.JPG" alt="Ομάδα" class="unit-icon" />
+              <p class="caption">
+                Φωτογραφία: 4η & 5η Ομάδα Νέας Σμύρνης (με άδεια χρήσης)
+              </p>
             </div>
-        </section>
-
-        <section id="koinotita" class="unit-block koinotita">
-            <div class="overlay">
-                <h3 class="koinotita">Ανιχνευτές</h3>
-                <p>Η Κοινότητά μας αποτελείται από 10 παιδιά και 3 Ενήλικα Στελέχη που με τις εκπαιδεύσεις και την αγάπη
-                    τους, φροντίζουν για την ασφάλεια, το παιχνίδι και ολόκληρη την Ανιχνευτική εμπειρία που λαμβάνουν
-                    οι Ανιχνευτές κάθε χρονιά!
-                </p>
-                    <div class="icon-text-block">
-                        <div class="image-caption-wrapper">
-                            <img src="images/koinotita_poioi.jpg" alt="Ομάδα" class="unit-icon">
-                            <p class="caption">Φωτογραφία: 4η & 5η Κοινότητα Νέας Σμύρνης & 1η Κοινότητα Υμηττού (με
-                                άδεια χρήσης)</p>
-                        </div>
-                        <div class="text-block">
-                            <p>Η Κοινότητα δεν χωρίζεται σε κάποια υποομάδα. Χωρίζεται όμως σε ομίλους δράσεων, δηλαδή
-                                κάθε βδομάδα ένας διαφορετικός όμιλος φτιάχνει τη δράση που έχουν αποφασίσει οι
-                                Ανιχνευτές,
-                                πάντα με την καθοδήγηση ενός Ενήλικου Στελέχους, στον προγραμματισμό που
-                                έκαναν στην αρχή της χρονιάς. Η Κοινότητα δεν έχει συγκεκριμένη ώρα και μέρα συνάντησης,
-                                αλλά θα είναι σίγουρα κάποια στιγμή το Σαββατοκύριακο. Δράσεις αρχίζουν από το πρώτο
-                            </p>
-                        </div>
-                    </div>
-                    <p>Σαββατοκύριακο του Οκτώβρη μέχρι το τελευταίο Σαββατοκύριακο του Μάη, ανάλογα και με τη
-                        συμμετοχή των παιδιών. Εκτός από τις τυπικές μας συγκεντρώσεις, σε μια Ανιχνευτική Χρονιά
-                        πηγαίνουμε και 2 2ήμερες εκδρομές, 2 4ήμερες εκ των οποίων η μία είναι η ΠΑΠΕ, μια Πανελαδική
-                        Πολιτισμική εκδρομή που διοργανώνεται κάθε χρόνο και συμμετέχουν όλες οι Κοινότητες της Ελλάδας,
-                        καθώς και πολλές μονοήμερες εκδρομές και επισκέψεις! Και το πρώτο 15μερο του Αυγούστου
-                        πραγματοποιείται η μεγάλη δράση υπέθρου μας!!!
-                    </p>
+            <div class="text-block">
+              <p>
+                Η ομάδα μας είναι χωρισμένη σε 3 ενωμοτίες, οι οποίες είναι οι
+                εξής:
+              </p>
+              <ul>
+                <li>Ελάφια</li>
+                <li>Γεράκια</li>
+                <li>Σκίουροι</li>
+              </ul>
+              <p>
+                Οι τυπικές συγκεντρώσεις μας πραγματοποιούνται στη Λέσχη μας
+                κάθε Κυριακή μεσημεροαπόγευμα και ώρες 16:00 - 18:00 από την
+                έναρξη των σχολείων μέχρι το τελευταίο Σαββατοκύριακο του Μάη
+                ενώ κάθε καλοκαίρι - συνήθως το πρώτο 15μερο του Ιούλη -
+                πραγματοποιείται η θερινή μας κατασκήνωση!!!
+              </p>
             </div>
-        </section>
+          </div>
+          <p>
+            Εκτός από τις τυπικές μας συγκεντρώσεις, σε μια προσκοπική χρονιά
+            πραγματοποιούμε δύο 2ήμερες εκδρομές, 2 4ήμερες και πολλές
+            μονοήμερες εκδρομές και επισκέψεις!
+          </p>
+        </div>
+      </section>
 
+      <section id="koinotita" class="unit-block koinotita">
+        <div class="overlay">
+          <h3 class="koinotita">Ανιχνευτές</h3>
+          <p>
+            Η Κοινότητά μας αποτελείται από 10 παιδιά και 3 Ενήλικα Στελέχη που
+            με τις εκπαιδεύσεις και την αγάπη τους, φροντίζουν για την ασφάλεια,
+            το παιχνίδι και ολόκληρη την Ανιχνευτική εμπειρία που λαμβάνουν οι
+            Ανιχνευτές κάθε χρονιά!
+          </p>
+          <div class="icon-text-block">
+            <div class="image-caption-wrapper">
+              <img
+                src="images/koinotita_poioi.jpg"
+                alt="Ομάδα"
+                class="unit-icon"
+              />
+              <p class="caption">
+                Φωτογραφία: 4η & 5η Κοινότητα Νέας Σμύρνης & 1η Κοινότητα
+                Υμηττού (με άδεια χρήσης)
+              </p>
+            </div>
+            <div class="text-block">
+              <p>
+                Η Κοινότητα δεν χωρίζεται σε κάποια υποομάδα. Χωρίζεται όμως σε
+                ομίλους δράσεων, δηλαδή κάθε βδομάδα ένας διαφορετικός όμιλος
+                φτιάχνει τη δράση που έχουν αποφασίσει οι Ανιχνευτές, πάντα με
+                την καθοδήγηση ενός Ενήλικου Στελέχους, στον προγραμματισμό που
+                έκαναν στην αρχή της χρονιάς. Η Κοινότητα δεν έχει συγκεκριμένη
+                ώρα και μέρα συνάντησης, αλλά θα είναι σίγουρα κάποια στιγμή το
+                Σαββατοκύριακο. Δράσεις αρχίζουν από το πρώτο
+              </p>
+            </div>
+          </div>
+          <p>
+            Σαββατοκύριακο του Οκτώβρη μέχρι το τελευταίο Σαββατοκύριακο του
+            Μάη, ανάλογα και με τη συμμετοχή των παιδιών. Εκτός από τις τυπικές
+            μας συγκεντρώσεις, σε μια Ανιχνευτική Χρονιά πηγαίνουμε και 2
+            2ήμερες εκδρομές, 2 4ήμερες εκ των οποίων η μία είναι η ΠΑΠΕ, μια
+            Πανελαδική Πολιτισμική εκδρομή που διοργανώνεται κάθε χρόνο και
+            συμμετέχουν όλες οι Κοινότητες της Ελλάδας, καθώς και πολλές
+            μονοήμερες εκδρομές και επισκέψεις! Και το πρώτο 15μερο του
+            Αυγούστου πραγματοποιείται η μεγάλη δράση υπέθρου μας!!!
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 4ο Σύστημα Προσκόπων Νέας Σμύρνης. Ελάτε μαζί μας στη δράση!</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/4ospns" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/4ospns/?igsh=M29ieW55Y2dieThj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
-                    class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@4ospns" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        </div>
+      <p>
+        &copy; 2026 4ο Σύστημα Προσκόπων Νέας Σμύρνης. Ελάτε μαζί μας στη δράση!
+      </p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/4ospns"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/4ospns/?igsh=M29ieW55Y2dieThj"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@4ospns"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="javascript/common.js"></script>
-</body>
-
+  </body>
 </html>

@@ -139,46 +139,6 @@ nav ul li a:hover::after {
     height: auto;
 }
 
-.branch-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    background-color: #fff;
-    padding: 20px 10px;
-}
-
-.branch-box {
-    position: relative;
-    width: 360px;
-    height: 120px;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.branch-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(65%);
-    transition: 0.3s ease;
-}
-
-.branch-box span {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    font-weight: bold;
-    font-size: 0.95em;
-    text-shadow: 0 0 5px black;
-}
-
-.branch-box:hover img {
-    filter: brightness(85%);
-    transform: scale(1.05);
-}
-
 .content {
     max-width: 900px;
     margin: 40px auto;
@@ -204,29 +164,6 @@ nav ul li a:hover::after {
 .content p {
     font-size: 1.1em;
     line-height: 1.6;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    border: 1px solid #999;
-}
-
-table thead {
-    background-color: #f0f0f0;
-}
-
-table th {
-    background-color: #e0e0e0;
-    color: #333;
-    text-align: left;
-}
-
-table td,
-table th {
-    border: 1px solid #999;
-    padding: 8px;
 }
 
 .unit-block {
@@ -311,50 +248,6 @@ table th {
 .icon-text-block .text-block {
     flex: 1;
     min-width: 200px;
-}
-
-.participation-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.participation-form h3 {
-    font-size: 1.8em;
-    color: #003366;
-    margin-bottom: 10px;
-}
-
-.participation-form label {
-    font-weight: bold;
-}
-
-.participation-form input,
-.participation-form select,
-.participation-form textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-}
-
-.participation-form button {
-    width: fit-content;
-    padding: 10px 20px;
-    background-color: #004d40;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.participation-form button:hover {
-    background-color: #00695c;
 }
 
 a:focus-visible,
@@ -1435,6 +1328,23 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 1024px) {
+    .about-page .about-hero,
+    .contact-page .contact-hero,
+    .contact-page .contact-action-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .about-page .about-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-page .contact-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
     header {
         gap: 12px;
@@ -1497,10 +1407,6 @@ html {
         padding: 0 10px;
     }
 
-    .participation-form {
-        padding: 15px;
-    }
-
     .burger {
         display: block;
         margin-left: 8px;
@@ -1559,7 +1465,7 @@ html {
     .contact-page .contact-columns {
         flex-direction: column;
         gap: 20px;
-        align-items: center;
+        align-items: stretch;
     }
 
     .contact-page .contact-hero-cards {
@@ -1577,10 +1483,6 @@ html {
     }
 
     .contact-page .contact-form {
-        padding: 15px;
-    }
-
-    .contact-page .contact-info {
         padding: 15px;
     }
 
@@ -1624,6 +1526,12 @@ html {
         padding: 20px;
     }
 
+    .about-page .about-highlight-card,
+    .contact-page .contact-action-card,
+    .contact-page .contact-column {
+        padding: 20px 18px;
+    }
+
     .contact-page .thanks-card {
         padding: 28px 20px;
     }
@@ -1634,22 +1542,49 @@ html {
 
     .about-page .unit-block {
         margin: 20px 0;
-        padding: 12px;
     }
 
     .about-page .icon-text-block {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
     }
 
     .about-page .unit-icon {
-        width: 90%;
-        max-width: 300px;
+        width: 100%;
+        max-width: none;
     }
 
     .about-page .text-block {
         width: 100%;
         padding-top: 10px;
+    }
+
+    .about-page .image-caption-wrapper {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .about-page .unit-block .overlay {
+        align-items: stretch;
+        text-align: left;
+    }
+
+    .about-page .unit-block h3,
+    .contact-page .contact-title,
+    .contact-page .contact-column h4,
+    .contact-page .contact-action-card h3,
+    .contact-page .contact-map-copy h3,
+    .contact-page .contact-note,
+    .contact-page .contact-map-copy p {
+        text-align: left;
+    }
+
+    .contact-page .contact-form button,
+    .contact-page .contact-primary-link,
+    .contact-page .contact-secondary-link {
+        width: 100%;
+        justify-content: center;
     }
 
     .about-page .content h2,
@@ -1663,16 +1598,6 @@ html {
         font-size: 1rem;
     }
 
-    .about-page .participation-form {
-        padding: 15px;
-    }
-
-    .about-page input,
-    .about-page select,
-    .about-page textarea {
-        width: 100%;
-        box-sizing: border-box;
-    }
 }
 
 @media (max-width: 480px) {
@@ -1696,7 +1621,9 @@ html {
     .home-page .hero,
     .home-page .intro-strip,
     .home-page .section-heading,
-    .home-page .story-band {
+    .home-page .story-band,
+    .about-page .about-shell,
+    .contact-page .contact-shell {
         width: min(100% - 20px, 1160px);
     }
 
@@ -1705,18 +1632,51 @@ html {
     }
 
     .home-page .primary-link,
-    .home-page .secondary-link {
+    .home-page .secondary-link,
+    .about-page .about-primary-link,
+    .about-page .about-secondary-link,
+    .about-page .about-jump-links a {
         width: 100%;
     }
 
     .home-page .hero h2,
     .home-page .section-heading h2,
-    .home-page .story-copy h2 {
+    .home-page .story-copy h2,
+    .about-page .about-hero h2,
+    .contact-page .contact-hero h2 {
         font-size: 1.9rem;
     }
 
     .home-page .hero-image-card img {
         height: 240px;
+    }
+
+    .about-page .about-hero-media img {
+        height: 240px;
+    }
+
+    .about-page .about-highlight-card strong,
+    .contact-page .contact-hero-cards strong {
+        font-size: 1.5rem;
+    }
+
+    .about-page .about-shell > p:not(.image-credit),
+    .about-page .about-highlight-card,
+    .about-page .unit-block .overlay,
+    .contact-page .contact-action-card,
+    .contact-page .contact-info,
+    .contact-page .contact-map,
+    .contact-page .contact-form,
+    .contact-page .contact-column {
+        padding: 18px 16px;
+    }
+
+    .contact-page .contact-map-frame iframe {
+        min-height: 260px;
+    }
+
+    .contact-page .contact-shell > h4 {
+        font-size: 1.3rem;
     }
 
     .contact-page .thanks-actions {

@@ -50,3 +50,13 @@ const nextField = document.querySelector("[data-form-next]");
 if (nextField && window.location.origin !== "null") {
   nextField.value = new URL("thanks.html", window.location.href).href;
 }
+
+const yearsElement = document.getElementById("yearsOfExistence");
+
+if (yearsElement) {
+  const startYear = 1960;
+  const currentYear = new Date().getFullYear();
+  const yearsOfExistence = currentYear - startYear;
+
+  yearsElement.textContent = yearsOfExistence;
+}
