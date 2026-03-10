@@ -823,6 +823,43 @@ body.home-page {
     text-decoration: underline;
 }
 
+.contact-page .contact-map {
+    display: grid;
+    gap: 18px;
+    margin: 28px 0;
+    padding: 24px;
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at top left, rgba(255, 214, 153, 0.25), transparent 24%),
+        linear-gradient(145deg, rgba(255, 248, 239, 0.98), rgba(255, 241, 220, 0.94));
+    box-shadow: 0 20px 40px rgba(92, 13, 13, 0.1);
+}
+
+.contact-page .contact-map-copy h3 {
+    margin: 0 0 8px;
+    color: #5c0d0d;
+    font-size: 1.5rem;
+}
+
+.contact-page .contact-map-copy p {
+    margin: 0;
+    color: #5e4a41;
+}
+
+.contact-page .contact-map-frame {
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(92, 13, 13, 0.12);
+    box-shadow: 0 16px 28px rgba(92, 13, 13, 0.12);
+}
+
+.contact-page .contact-map-frame iframe {
+    display: block;
+    width: 100%;
+    min-height: 360px;
+    border: 0;
+}
+
 .contact-page footer {
     text-align: center;
     background-color: #790b0b;
@@ -1133,6 +1170,14 @@ html {
 
     .contact-page .contact-info {
         padding: 15px;
+    }
+
+    .contact-page .contact-map {
+        padding: 18px;
+    }
+
+    .contact-page .contact-map-frame iframe {
+        min-height: 300px;
     }
 
     .contact-page .thanks-card {
